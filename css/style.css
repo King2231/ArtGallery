@@ -1,0 +1,387 @@
+/*grid code*//
+* {
+    box-sizing: border-box;
+}
+.header {
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*gridcodeends*/
+
+body{
+background-image: url('../img/color.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+color:white;
+background-attachment: fixed;
+overflow: scroll;
+-webkit-animation: mymove 50s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 50s; 
+}
+@-webkit-keyframes mymove {
+    0% {background-image: url('../img/color.jpg');}
+    25% {background-image: url('../img/colorful.jpg');}
+    50% {background-image: url('../img/color1.jpg');}
+    75% {background-image: url('../img/c.jpg');}
+    100% {background-image: url('../img/color.jpg');}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+   0% {background-image: url('../img/color.jpg');}
+    25% {background-image: url('../img/colorful.jpg');}
+    50% {background-image: url('../img/color1.jpg');}
+    75% {background-image: url('../img/c.jpg');}
+    100% {background-image: url('../img/color.jpg');}
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+.body{
+position:relative;
+top:0px;
+left:0px;
+height:90%;
+width:100%;
+background-color: rgba(0,0,255,0.2);
+background-size: cover;
+}
+
+.brand{
+font-size:55px;
+position:fixed;
+top:15px;
+left:150px;
+color:white;
+font-family: "Brush Script MT", cursive;
+font-weight: bolder;
+letter-spacing:5px;
+text-shadow: 2px 7px 7px #ff000f;
+
+}
+ul {
+    z-index:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Brush Script MT", cursive;
+    background-color: rgba(0, 100, 255, 0.3);
+    z-index:10;
+    box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+    
+    background: rgba(0,0,255,0.2); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgba(77,0,0,0.5),rgba(0,0,255,0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(77,0,0,0.5),rgba(0,0,255,0.2)); /* For Opera 1.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(77,0,0,0.5),rgba(0,0,255,0.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(77,0,0,0.5),rgba(0,0,255,0.2)); /* Standard s5 x (must be last) */
+}
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing:6px;
+    font-size:20px;
+text-shadow: 4px 10px 8px #000000;
+}
+
+li a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+li {
+    float: right;
+}
+
+li a, .glyphicon,span {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing:6px;
+text-shadow: 4px 10px 8px #000000;
+font-family: "Brush Script MT", cursive;
+}
+
+@font-face{
+
+font-family: 'Glyphicons Halflings';
+
+
+src: url('../fonts/glyphicons-halflings-regular.eot');
+
+src: url('../fonts/glyphicons-halflings-regular.eot?#iefix')
+format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2')
+format('woff2'), url('../fonts/glyphicons-halflings-regular.woff')
+format('woff'), url('../fonts/glyphicons-halflings-regular.ttf')
+format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')
+format('svg');
+
+}
+
+.glyphicon{
+
+display: inline-block;
+
+text-decoration:none;
+font-family: 'Glyphicons Halflings';
+
+-webkit-font-smoothing: antialiased;
+
+-moz-osx-font-smoothing: grayscale;
+
+}
+
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-edit:before {
+  content: "\e065";
+}
+input[type=submit],input[type=reset]{
+   height:65px;
+    padding: 10px 12px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius:5px;
+    box-sizing:border-box;
+font-size: 30px;
+font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+letter-spacing: 2px;
+background-color:rgba(0,0,0,0.5);
+color:#ffffff;
+}
+input[type="submit"]:hover {
+	background-color: rgba(16, 89, 134, 0.52);
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+input[type="reset"]:hover {
+    background-color: rgba(16, 89, 134, 0.52);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+input[type=text],textarea,input[type=password]{
+    width: 80%;
+    padding: 30px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+font-size: 17px;
+font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+letter-spacing: 2px;
+background-color:rgba(0,0,0,0.5);
+color:#ffffff;
+}
+.content{
+	color:#ffffff;
+	position:relative;
+	left:30px;
+	top:10px;
+        padding: 50px 30px 20px 30px;
+	width:90%;
+	height:80%;
+	background-color: rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	-webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	border-radius:10px;
+        letter-spacing: 2px;
+        font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 30px;
+	display: inline-block;
+}
+.singup{
+    color:#ffffff;
+	position:relative;
+	left:120px;
+	top:20px;
+        padding: 50px 30px 20px 30px;
+	width:1100px;
+	height:60%;
+	background-color: rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	-webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	border-radius:10px;
+        letter-spacing: 2px;
+        font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 30px;
+}
+.copyright{
+    position: relative;
+    bottom:0px;
+    left:0px;
+    text-align: center;
+    letter-spacing: 20px;
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 25px;
+}
+.setup{
+        color:#ffffff;
+	position:relative;
+	left:150px;
+	top:10px;
+        padding: 50px 30px 20px 30px;
+	width:1100px;
+	height:700px;
+	background-color: rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	-webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	border-radius:10px;
+        letter-spacing: 2px;
+        font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 30px;
+}
+
+        /* jssor slider arrow navigator skin 05 css */
+        /*
+        .jssora05l                  (normal)
+        .jssora05r                  (normal)
+        .jssora05l:hover            (normal mouseover)
+        .jssora05r:hover            (normal mouseover)
+        .jssora05l.jssora05ldn      (mousedown)
+        .jssora05r.jssora05rdn      (mousedown)
+        .jssora05l.jssora05lds      (disabled)
+        .jssora05r.jssora05rds      (disabled)
+        */
+        .jssora05l, .jssora05r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: url('../img/a17.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora05l { background-position: -10px -40px; }
+        .jssora05r { background-position: -70px -40px; }
+        .jssora05l:hover { background-position: -130px -40px; }
+        .jssora05r:hover { background-position: -190px -40px; }
+        .jssora05l.jssora05ldn { background-position: -250px -40px; }
+        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+        .jssora05l.jssora05lds { background-position: -10px -40px; opacity: .3; pointer-events: none; }
+        .jssora05r.jssora05rds { background-position: -70px -40px; opacity: .3; pointer-events: none; }
+        /* jssor slider thumbnail navigator skin 01 css *//*.jssort01 .p            (normal).jssort01 .p:hover      (normal mouseover).jssort01 .p.pav        (active).jssort01 .p.pdn        (mousedown)*/
+        .jssort01 .p {    position: absolute;    top: 0;    left: 0;    width: 72px;    height: 72px;}
+        .jssort01 .t {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    border: none;}
+
+        .jssort01 .w {    position: absolute;    top: 0px;    left: 0px;    width: 100%;    height: 100%;}
+        .jssort01 .c {    position: absolute;    top: 0px;    left: 0px;    width: 68px;    height: 68px;    border: #000 2px solid;    box-sizing: content-box;    background: url('../img/t01.png') -800px -800px no-repeat;    _background: none;}
+        .jssort01 .pav .c {    top: 2px;    _top: 0px;    left: 2px;    _left: 0px;    width: 68px;    height: 68px;    border: #000 0px solid;    _border: #fff 2px solid;    background-position: 50% 50%;}
+        .jssort01 .p:hover .c {    top: 0px;    left: 0px;    width: 70px;    height: 70px;    border: #fff 1px solid;    background-position: 50% 50%;}
+        .jssort01 .p.pdn .c {    background-position: 50% 50%;    width: 68px;    height: 68px;    border: #000 2px solid;}* html 
+        .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {    /* ie quirks mode adjust */    width /**/: 72px;    height /**/: 72px;}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev {
+  left: 5px;
+}
+#signin{
+    position: fixed;
+    left: 0px;
+    width: 45%;
+    height: 90%;
+   background-color: rgba(255,255,0,0.5);
+    background-size: 100% 100%;
+    z-index: 10001;
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    border: 5px groove yellow;
+    border-radius: 10px;
+     font-size: 50px;
+    color: inherit;
+    transition:left 0.5s ease;
+}
+.header1{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    font-size: 75px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 30px;
+}

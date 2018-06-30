@@ -1,0 +1,251 @@
+/* 
+    Document   : user
+    Created on : 03-Oct-2016, 14:08:54
+    Author     : King
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+background-image: url('../img/bg1.png');
+background-size: cover;
+background-repeat: no-repeat;
+color:white;
+background-attachment: fixed;
+overflow: scroll;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+.body{
+position:relative;
+top:0px;
+left:0px;
+height:90%;
+width:100%;
+background-color: rgba(0,0,255,0.3);
+background-size: cover;
+}
+.brand{
+font-size:55px;
+position:fixed;
+top:15px;
+left:50px;
+color:white;
+font-family: "Brush Script MT", cursive;
+font-weight: bolder;
+letter-spacing:5px;
+
+}
+.copyright{
+    position: relative;
+    bottom:0px;
+    left:0px;
+    text-align: center;
+    letter-spacing: 20px;
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 25px;
+}
+ul {
+    z-index:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Brush Script MT", cursive;
+   background-color: rgba(0, 100, 255, 0.3);
+    z-index:10;
+    box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+    
+    background: rgba(0,0,255,0.2); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.5),rgba(0,0,255,0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(0,0,0,0.5),rgba(0,0,255,0.2)); /* For Opera 1.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(0,0,0,0.5),rgba(0,0,255,0.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,255,0.2)); /* Standard s5 x (must be last) */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing:6px;
+    font-size:20px;
+text-shadow: 4px 10px 8px #000000;
+}
+
+li a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+li a, .glyphicon,span {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing:6px;
+text-shadow: 4px 10px 8px #000000;
+font-family: "Brush Script MT", cursive;
+}
+.menu{
+    position:relative;
+    top:120px;
+    left:10px;
+    width:210px;
+    position: fixed;
+    z-index: 10000;
+    
+    text-align: left;
+}
+li.right{
+    float:right;
+    position: relative;
+    right: 100px;
+}
+.usercontent{
+  	color:#ffffff;
+	position:relative;
+	left:220px;
+	top:10px;
+        padding: 50px 30px 20px 30px;
+	width:80%;
+        height:500px;
+	background-color: rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	-webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	border-radius:10px;
+        letter-spacing: 2px;
+        font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+        font-size: 30px; 
+        overflow: scroll;
+}
+
+
+@font-face{
+
+font-family: 'Glyphicons Halflings';
+
+
+src: url('../fonts/glyphicons-halflings-regular.eot');
+
+src: url('../fonts/glyphicons-halflings-regular.eot?#iefix')
+format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2')
+format('woff2'), url('../fonts/glyphicons-halflings-regular.woff')
+format('woff'), url('../fonts/glyphicons-halflings-regular.ttf')
+format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')
+format('svg');
+
+}
+
+.glyphicon{
+
+display: inline-block;
+
+text-decoration:none;
+font-family: 'Glyphicons Halflings';
+
+-webkit-font-smoothing: antialiased;
+
+-moz-osx-font-smoothing: grayscale;
+
+}
+
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-edit:before {
+  content: "\e065";
+}
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+.glyphicon-tag:before {
+  content: "\e041";
+}
+.glyphicon-tags:before {
+  content: "\e042";
+}
+.glyphicon-book:before {
+  content: "\e043";
+}
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+input[type=text],textarea,input[type=password]{
+    width: 80%;
+    padding: 30px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+font-size: 17px;
+font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+letter-spacing: 2px;
+background-color:rgba(0,0,0,0.5);
+color:#ffffff;
+}
+.usercontent::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+}
+ 
+.usercontent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+}
+ 
+.usercontent::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+input[type=submit]{
+   height:65px;
+    padding: 10px 12px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius:5px;
+    box-sizing:border-box;
+font-size: 30px;
+font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+letter-spacing: 2px;
+background-color:rgba(0,0,0,0.5);
+color:#ffffff;
+}
+input[type="submit"]:hover {
+	background-color: rgba(16, 89, 134, 0.52);
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
